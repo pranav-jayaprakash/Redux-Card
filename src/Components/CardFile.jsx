@@ -21,6 +21,7 @@ function CardFile() {
 
   return (
     <div>
+        <button onClick={handleclick}>Click for Data</button>
         
     </div>
   )
