@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
 import { DataFile } from '../Redux/Api'
@@ -15,9 +15,15 @@ function CardFile() {
 
     }
 
+    
+
 
     const take = useSelector(state=>state.Sample.Data)
     console.log(take,'XXXX')
+
+    
+
+    console.log(take.Data)
 
   return (
     <div>
