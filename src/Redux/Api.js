@@ -4,7 +4,7 @@ import { Adder } from './DataSlice'
 export const DataFile=async(dispatch)=>{
     try {
 
-        const files = await axios.get('https://jsonplaceholder.typicode.com/users')
+        const files = await axios.get('https://jsonplaceholder.typicode.com/posts')
         console.log(files.data)
         dispatch(Adder(files.data))
 
